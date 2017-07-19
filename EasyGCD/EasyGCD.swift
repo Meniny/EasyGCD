@@ -33,6 +33,10 @@ fileprivate var DispatchTimeCalculate: (_ time: TimeInterval) -> DispatchTime = 
     DispatchTime.now() + Double(GetTimeout($0)) / Double(NSEC_PER_SEC)
 }
 
+fileprivate func Execute(selector: Selector, of target: Any) {
+    Timer.scheduledTimer(timeInterval: 0, target: target, selector: selector, userInfo: nil, repeats: false)
+}
+
 // MARK: - EasyGCD Main structure
 
 public struct EasyGCD {
@@ -42,8 +46,7 @@ public struct EasyGCD {
     
     fileprivate let currentItem: DispatchWorkItem
     fileprivate init(closure: @escaping EasyGCD.VoidClosure) {
-        let item = DispatchWorkItem(flags: DispatchWorkItemFlags.inheritQoS, block: closure)
-        currentItem = item
+        currentItem = DispatchWorkItem(flags: DispatchWorkItemFlags.inheritQoS, block: closure)
     }
 }
 
@@ -175,9 +178,8 @@ public extension EasyGCD {
 }
 
 // MARK: - Chainable methods
+// MARK: Static methods
 public extension EasyGCD {
-    
-    // MARK: Static methods
     
     @discardableResult
     public static func async(_ queue: DispatchQueue = .main, closure: @escaping EasyGCD.VoidClosure) -> EasyGCD {
@@ -187,8 +189,26 @@ public extension EasyGCD {
     }
     
     @discardableResult
+    public static func async(_ queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
+        let dispatch = EasyGCD {
+            Execute(selector: selector, of: target)
+        }
+        queue.async(execute: dispatch.currentItem)
+        return dispatch
+    }
+    
+    @discardableResult
     public static func sync(_ queue: DispatchQueue = .main, closure: @escaping EasyGCD.VoidClosure) -> EasyGCD {
         let dispatch = EasyGCD(closure: closure)
+        queue.sync(execute: dispatch.currentItem)
+        return dispatch
+    }
+    
+    @discardableResult
+    public static func sync(_ queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
+        let dispatch = EasyGCD {
+            Execute(selector: selector, of: target)
+        }
         queue.sync(execute: dispatch.currentItem)
         return dispatch
     }
@@ -205,11 +225,24 @@ public extension EasyGCD {
         return after(DispatchTimeCalculate(time), queue: queue, closure: closure)
     }
     
-    // MARK: Instance methods
+}
+
+// MARK: Instance methods
+public extension EasyGCD {
     
     @discardableResult
     public func async(_ queue: DispatchQueue = .main, closure: @escaping EasyGCD.VoidClosure) -> EasyGCD {
         return chain(time: nil, queue: queue, closure: closure)
+    }
+    
+    @discardableResult
+    public func async(_ queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
+        let asyncWrapper: EasyGCD.VoidClosure = {
+            queue.async(execute: {
+                Execute(selector: selector, of: target)
+            })
+        }
+        return chain(time: nil, queue: queue, closure: asyncWrapper)
     }
     
     @discardableResult
@@ -221,8 +254,28 @@ public extension EasyGCD {
     }
     
     @discardableResult
+    public func sync(_ queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
+        let syncWrapper: EasyGCD.VoidClosure = {
+            queue.sync(execute: { 
+                Execute(selector: selector, of: target)
+            })
+        }
+        return chain(time: nil, queue: queue, closure: syncWrapper)
+    }
+    
+    @discardableResult
     public func after(_ dispatchTime: DispatchTime, queue: DispatchQueue = .main, closure: @escaping EasyGCD.VoidClosure) -> EasyGCD {
         return chain(dispatchTime: dispatchTime, queue: queue, closure: closure)
+    }
+    
+    @discardableResult
+    public func after(_ dispatchTime: DispatchTime, queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
+        let asyncWrapper: EasyGCD.VoidClosure = {
+            queue.async(execute: {
+                Execute(selector: selector, of: target)
+            })
+        }
+        return chain(dispatchTime: dispatchTime, queue: queue, closure: asyncWrapper)
     }
     
     @discardableResult
@@ -230,8 +283,20 @@ public extension EasyGCD {
         return chain(time: time, queue: queue, closure: closure)
     }
     
-    // MARK: Private chaining helper method
-    /// Private chaining helper method
+    @discardableResult
+    public func after(_ time: TimeInterval, queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
+        let syncWrapper: EasyGCD.VoidClosure = {
+            queue.sync(execute: {
+                Execute(selector: selector, of: target)
+            })
+        }
+        return chain(time: time, queue: queue, closure: syncWrapper)
+    }
+}
+
+// MARK: - Private chaining helper method
+fileprivate extension EasyGCD {
+    
     fileprivate func chain(dispatchTime: DispatchTime?, queue: DispatchQueue = .main, closure: @escaping EasyGCD.VoidClosure) -> EasyGCD {
         let newDispatch = EasyGCD(closure: closure)
         let nextItem: DispatchWorkItem
@@ -296,7 +361,7 @@ public extension EasyGCD {
      only execute the code once even in the presence of multithreaded calls.
      
      - parameter token: A unique reverse DNS style name such as com.vectorform.<name> or a GUID
-     - parameter block: Block to execute once
+     - parameter closure: Closure to execute once
      */
     public static func once(token: String, closure: EasyGCD.VoidClosure) {
         objc_sync_enter(self)
@@ -308,6 +373,20 @@ public extension EasyGCD {
         
         EasyGCD.onceTracker.append(token)
         closure()
+    }
+    
+    /**
+     Executes a block of code, associated with a unique token, only once.  The code is thread safe and will
+     only execute the code once even in the presence of multithreaded calls.
+     
+     - parameter token: A unique reverse DNS style name such as com.vectorform.<name> or a GUID
+     - parameter target: Target
+     - parameter selector: `Selector`
+     */
+    public static func once(token: String, target: Any, selector: Selector) {
+        once(token: token) {
+            Execute(selector: selector, of: target)
+        }
     }
 }
 
