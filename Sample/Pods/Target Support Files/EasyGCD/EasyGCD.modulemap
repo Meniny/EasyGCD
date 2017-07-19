@@ -1,0 +1,6 @@
+framework module EasyGCD {
+  umbrella header "EasyGCD-umbrella.h"
+
+  export *
+  module * { export * }
+}

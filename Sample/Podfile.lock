@@ -1,0 +1,16 @@
+PODS:
+  - EasyGCD (1.0.0)
+
+DEPENDENCIES:
+  - EasyGCD (from `../`)
+
+EXTERNAL SOURCES:
+  EasyGCD:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EasyGCD: f7de5759ddc62d238817910de1f4c2bffdae8bc1
+
+PODFILE CHECKSUM: b9815e84a599036397e8a17cb4747a44fb6f1de2
+
+COCOAPODS: 1.2.1
