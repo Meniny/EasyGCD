@@ -23,10 +23,7 @@
  */
 
 #import <Foundation/Foundation.h>
-//#if TARGET_OS_MAC
-//    #import <Cocoa/Cocoa.h>
-//#else
-//#endif
+#import <Dispatch/Dispatch.h>
 
 //! Project version number for EasyGCD.
 FOUNDATION_EXPORT double EasyGCDVersionNumber;

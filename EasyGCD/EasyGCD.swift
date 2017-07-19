@@ -23,6 +23,7 @@
  */
 
 import Foundation
+import Dispatch
 
 fileprivate var GetTimeout: (_ time: TimeInterval) -> Int64 = {
     Int64($0 * Double(NSEC_PER_SEC))
