@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EasyGCD  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="EasyGCD  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">EasyGCD Docs</a> (3% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">EasyGCD Reference</a>
+        <img id="carat" src="img/carat.png" />
+        EasyGCD  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/EasyGCD.html">EasyGCD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/EasyGCD/Queue.html">– Queue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/EasyGCD/Group.html">– Group</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/EasyGCD/Semaphore.html">– Semaphore</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p align="center">
+  <img src="https://ooo.0o0.ooo/2017/07/20/5970681dc4468.png" alt="EasyGCD">
+  <br/><a href="https://cocoapods.org/pods/EasyGCD">
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.2-brightgreen.svg">
+  <img alt="Author" src="https://img.shields.io/badge/author-Meniny-blue.svg">
+  <img alt="Build Passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">
+  <img alt="Swift" src="https://img.shields.io/badge/swift-3.0%2B-orange.svg">
+  <br/>
+  <img alt="Platforms" src="https://img.shields.io/badge/platform-macOS%20%7C%20iOS%20%7C%20watchOS%20%7C%20tvOS-lightgrey.svg">
+  <img alt="MIT" src="https://img.shields.io/badge/license-MIT-blue.svg">
+  <br/>
+  <img alt="Cocoapods" src="https://img.shields.io/badge/cocoapods-compatible-brightgreen.svg">
+  <img alt="Carthage" src="https://img.shields.io/badge/carthage-working%20on-red.svg">
+  <img alt="SPM" src="https://img.shields.io/badge/swift%20package%20manager-working%20on-red.svg">
+  </a>
+</p>
+<h2 id='what-39-s-this' class='heading'>What&rsquo;s this?</h2>
+
+<p><code>EasyGCD</code> is a tiny library to make using GCD easier. written in Swift.</p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 8.0+</li>
+<li>macOS 10.10+</li>
+<li>watchOS 2.0+</li>
+<li>tvOS 9.0+</li>
+<li>Xcode 8 with Swift 3</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h4 id='cocoapods' class='heading'>CocoaPods</h4>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'EasyGCD'</span>
+</code></pre>
+<h2 id='contribution' class='heading'>Contribution</h2>
+
+<p>You are welcome to fork and submit pull requests.</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p><code>EasyGCD</code> is open-sourced software, licensed under the <code>MIT</code> license.</p>
+<h2 id='usage' class='heading'>Usage</h2>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">EasyGCD</span>
+
+<span class="kd">func</span> <span class="nf">sync</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">EasyGCD</span><span class="o">.</span><span class="nf">sync</span><span class="p">(</span><span class="o">.</span><span class="nf">global</span><span class="p">(</span><span class="nv">qos</span><span class="p">:</span> <span class="o">.</span><span class="n">background</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"sync @ background global queue"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">async</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">EasyGCD</span><span class="o">.</span><span class="nf">async</span><span class="p">(</span><span class="kt">EasyGCDQueue</span><span class="o">.</span><span class="nf">global</span><span class="p">(</span><span class="o">.</span><span class="n">background</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"async @ background global queue"</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="kt">EasyGCD</span><span class="o">.</span><span class="n">async</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"async @ main queue"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">after</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">EasyGCD</span><span class="o">.</span><span class="nf">after</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"2 seconds later"</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="kt">EasyGCD</span><span class="o">.</span><span class="nf">after</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="nv">queue</span><span class="p">:</span> <span class="o">.</span><span class="nf">global</span><span class="p">(</span><span class="nv">qos</span><span class="p">:</span> <span class="o">.</span><span class="k">default</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"4 seconds later"</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="kt">EasyGCD</span><span class="o">.</span><span class="nf">after</span><span class="p">(</span><span class="kt">DispatchTime</span><span class="o">.</span><span class="nf">now</span><span class="p">()</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="nv">queue</span><span class="p">:</span> <span class="o">.</span><span class="n">main</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"6 seconds later"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">once</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">EasyGCD</span><span class="o">.</span><span class="nf">once</span><span class="p">(</span><span class="nv">token</span><span class="p">:</span> <span class="s">"Once"</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Once"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/Meniny/EasyGCD" target="_blank" rel="external">Elias Abel</a>. All rights reserved. (Last updated: 2017-07-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
