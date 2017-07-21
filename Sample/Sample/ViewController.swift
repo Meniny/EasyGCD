@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         EasyGCD.after(4, queue: .global(qos: .default)) {
             print("4 seconds later")
         }
-        EasyGCD.after(DispatchTime.now() + 5, queue: .main) {
+        EasyGCD.after(DispatchTime.now() + 6, queue: .main) {
             print("6 seconds later")
         }
     }

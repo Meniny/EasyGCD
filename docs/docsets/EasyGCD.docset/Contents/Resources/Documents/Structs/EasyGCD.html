@@ -14,7 +14,7 @@
     <a title="EasyGCD Struct Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">EasyGCD Docs</a> (3% documented)</p>
+        <p><a href="../index.html">EasyGCD Docs</a> (32% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -93,8 +93,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Main Dispatch Queue</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">mainQueue</span><span class="p">:</span> <span class="kt">DispatchQueue</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -112,8 +120,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Global Dispatch Queue with Specific Priority</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">globalQueue</span><span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt">DispatchQoS</span><span class="o">.</span><span class="kt">QoSClass</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DispatchQueue</span> <span class="o">=</span> <span class="p">{</span> <span class="p">(</span><span class="n">priority</span><span class="p">)</span> <span class="k">in</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -131,8 +147,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Custom Dispatch Queue with Specific Identifier and Attributes</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">customQueue</span><span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">attributes</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="o">.</span><span class="kt">Attributes</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DispatchQueue</span> <span class="o">=</span> <span class="p">{</span> <span class="p">(</span><span class="n">identifier</span><span class="p">,</span> <span class="n">attributes</span><span class="p">)</span> <span class="k">in</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -202,8 +226,51 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Executes a block of code asynchronously</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">async</span><span class="p">(</span><span class="n">_</span> <span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span> <span class="o">=</span> <span class="o">.</span><span class="n">main</span><span class="p">,</span> <span class="nv">closure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">EasyGCD</span><span class="o">.</span><span class="kt">VoidClosure</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EasyGCD</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>DispatchQueue</code> object, degault is <code>.main</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>closure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Code closure</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>EasyGCD</code> object</p>
                       </div>
                     </section>
                   </div>
@@ -221,8 +288,63 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Perform a <code>Selector</code> asynchronously</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">async</span><span class="p">(</span><span class="n">_</span> <span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span> <span class="o">=</span> <span class="o">.</span><span class="n">main</span><span class="p">,</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="p">,</span> <span class="nv">selector</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EasyGCD</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>DispatchQueue</code> object, degault is <code>.main</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Target of <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Selector</code> object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>EasyGCD</code> object</p>
                       </div>
                     </section>
                   </div>
@@ -240,8 +362,51 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Executes a block of code synchronously</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">sync</span><span class="p">(</span><span class="n">_</span> <span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span> <span class="o">=</span> <span class="o">.</span><span class="n">main</span><span class="p">,</span> <span class="nv">closure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">EasyGCD</span><span class="o">.</span><span class="kt">VoidClosure</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EasyGCD</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>DispatchQueue</code> object, degault is <code>.main</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>closure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Code closure</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>EasyGCD</code> object</p>
                       </div>
                     </section>
                   </div>
@@ -259,8 +424,63 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Perform a <code>Selector</code> synchronously</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">sync</span><span class="p">(</span><span class="n">_</span> <span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span> <span class="o">=</span> <span class="o">.</span><span class="n">main</span><span class="p">,</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="p">,</span> <span class="nv">selector</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EasyGCD</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>DispatchQueue</code> object, degault is <code>.main</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Target of <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Selector</code> object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>EasyGCD</code> object</p>
                       </div>
                     </section>
                   </div>
@@ -278,8 +498,149 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Executes a block of code asynchronously after a specific time interval</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">after</span><span class="p">(</span><span class="n">_</span> <span class="nv">dispatchTime</span><span class="p">:</span> <span class="kt">DispatchTime</span><span class="p">,</span> <span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span> <span class="o">=</span> <span class="o">.</span><span class="n">main</span><span class="p">,</span> <span class="nv">closure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">EasyGCD</span><span class="o">.</span><span class="kt">VoidClosure</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EasyGCD</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dispatchTime</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>DispatchTime</code> object</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>DispatchQueue</code> object, degault is <code>.main</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>closure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Code closure</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>EasyGCD</code> object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFV7EasyGCD7EasyGCD5afterFTV8Dispatch12DispatchTime5queueCSo13DispatchQueue6targetP_8selectorV10ObjectiveC8Selector_S0_"></a>
+                    <a name="//apple_ref/swift/Method/after(_:queue:target:selector:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFV7EasyGCD7EasyGCD5afterFTV8Dispatch12DispatchTime5queueCSo13DispatchQueue6targetP_8selectorV10ObjectiveC8Selector_S0_">after(_:queue:target:selector:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Perform a <code>Selector</code> asynchronously after a specific time interval</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">after</span><span class="p">(</span><span class="n">_</span> <span class="nv">dispatchTime</span><span class="p">:</span> <span class="kt">DispatchTime</span><span class="p">,</span> <span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span> <span class="o">=</span> <span class="o">.</span><span class="n">main</span><span class="p">,</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="p">,</span> <span class="nv">selector</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EasyGCD</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dispatchTime</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>DispatchTime</code> object</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>DispatchQueue</code> object, degault is <code>.main</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Target of <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Selector</code> object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>EasyGCD</code> object</p>
                       </div>
                     </section>
                   </div>
@@ -297,69 +658,63 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Executes a block of code asynchronously after a specific time interval</p>
 
                       </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FV7EasyGCD7EasyGCD5asyncFTCSo13DispatchQueue7closureFT_T__S0_"></a>
-                    <a name="//apple_ref/swift/Method/async(_:closure:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV7EasyGCD7EasyGCD5asyncFTCSo13DispatchQueue7closureFT_T__S0_">async(_:closure:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">after</span><span class="p">(</span><span class="n">_</span> <span class="nv">time</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">,</span> <span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span> <span class="o">=</span> <span class="o">.</span><span class="n">main</span><span class="p">,</span> <span class="nv">closure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">EasyGCD</span><span class="o">.</span><span class="kt">VoidClosure</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EasyGCD</span></code></pre>
 
+                        </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FV7EasyGCD7EasyGCD5asyncFTCSo13DispatchQueue6targetP_8selectorV10ObjectiveC8Selector_S0_"></a>
-                    <a name="//apple_ref/swift/Method/async(_:target:selector:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV7EasyGCD7EasyGCD5asyncFTCSo13DispatchQueue6targetP_8selectorV10ObjectiveC8Selector_S0_">async(_:target:selector:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>time</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>TimeInterval</code> object</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>DispatchQueue</code> object, degault is <code>.main</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>closure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Code closure</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FV7EasyGCD7EasyGCD4syncFTCSo13DispatchQueue7closureFT_T__S0_"></a>
-                    <a name="//apple_ref/swift/Method/sync(_:closure:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV7EasyGCD7EasyGCD4syncFTCSo13DispatchQueue7closureFT_T__S0_">sync(_:closure:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>EasyGCD</code> object</p>
                       </div>
                     </section>
                   </div>
@@ -367,47 +722,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV7EasyGCD7EasyGCD4syncFTCSo13DispatchQueue6targetP_8selectorV10ObjectiveC8Selector_S0_"></a>
-                    <a name="//apple_ref/swift/Method/sync(_:target:selector:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV7EasyGCD7EasyGCD4syncFTCSo13DispatchQueue6targetP_8selectorV10ObjectiveC8Selector_S0_">sync(_:target:selector:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FV7EasyGCD7EasyGCD5afterFTV8Dispatch12DispatchTime5queueCSo13DispatchQueue7closureFT_T__S0_"></a>
-                    <a name="//apple_ref/swift/Method/after(_:queue:closure:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV7EasyGCD7EasyGCD5afterFTV8Dispatch12DispatchTime5queueCSo13DispatchQueue7closureFT_T__S0_">after(_:queue:closure:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FV7EasyGCD7EasyGCD5afterFTV8Dispatch12DispatchTime5queueCSo13DispatchQueue6targetP_8selectorV10ObjectiveC8Selector_S0_"></a>
+                    <a name="/s:ZFV7EasyGCD7EasyGCD5afterFTSd5queueCSo13DispatchQueue6targetP_8selectorV10ObjectiveC8Selector_S0_"></a>
                     <a name="//apple_ref/swift/Method/after(_:queue:target:selector:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV7EasyGCD7EasyGCD5afterFTV8Dispatch12DispatchTime5queueCSo13DispatchQueue6targetP_8selectorV10ObjectiveC8Selector_S0_">after(_:queue:target:selector:)</a>
+                    <a class="token" href="#/s:ZFV7EasyGCD7EasyGCD5afterFTSd5queueCSo13DispatchQueue6targetP_8selectorV10ObjectiveC8Selector_S0_">after(_:queue:target:selector:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -415,46 +732,75 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Perform a <code>Selector</code> asynchronously after a specific time interval</p>
 
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FV7EasyGCD7EasyGCD5afterFTSd5queueCSo13DispatchQueue7closureFT_T__S0_"></a>
-                    <a name="//apple_ref/swift/Method/after(_:queue:closure:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV7EasyGCD7EasyGCD5afterFTSd5queueCSo13DispatchQueue7closureFT_T__S0_">after(_:queue:closure:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">after</span><span class="p">(</span><span class="n">_</span> <span class="nv">time</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">,</span> <span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span> <span class="o">=</span> <span class="o">.</span><span class="n">main</span><span class="p">,</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="p">,</span> <span class="nv">selector</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EasyGCD</span></code></pre>
 
+                        </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FV7EasyGCD7EasyGCD5afterFTSd5queueCSo13DispatchQueue6targetP_8selectorV10ObjectiveC8Selector_S0_"></a>
-                    <a name="//apple_ref/swift/Method/after(_:queue:target:selector:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV7EasyGCD7EasyGCD5afterFTSd5queueCSo13DispatchQueue6targetP_8selectorV10ObjectiveC8Selector_S0_">after(_:queue:target:selector:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>time</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>TimeInterval</code> object</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>DispatchQueue</code> object, degault is <code>.main</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Target of <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Selector</code> object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>EasyGCD</code> object</p>
                       </div>
                     </section>
                   </div>
@@ -777,7 +1123,7 @@ only execute the code once even in the presence of multithreaded calls.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://github.com/Meniny/EasyGCD" target="_blank" rel="external">Elias Abel</a>. All rights reserved. (Last updated: 2017-07-20)</p>
+          <p>&copy; 2017 <a class="link" href="https://github.com/Meniny/EasyGCD" target="_blank" rel="external">Elias Abel</a>. All rights reserved. (Last updated: 2017-07-21)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

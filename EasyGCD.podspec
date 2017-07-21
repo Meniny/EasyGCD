@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "EasyGCD"
-  s.version          = "1.0.2"
+  s.version          = "1.0.3"
   s.summary          = "A tiny library to make using GCD easier."
   s.homepage         = "https://github.com/Meniny/EasyGCD"
   s.license          = 'MIT'
@@ -15,8 +15,5 @@ Pod::Spec.new do |s|
   s.source_files = 'EasyGCD/*.*'
   s.module_name = 'EasyGCD'
   s.public_header_files = 'EasyGCD/*.h'
-  s.ios.frameworks = 'Foundation'
-  s.osx.frameworks = 'Cocoa'
-  s.tvos.frameworks = 'Foundation'
-  s.watchos.frameworks = 'Foundation'
+  s.frameworks = 'Foundation'
 end
