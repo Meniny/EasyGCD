@@ -41,7 +41,7 @@ fileprivate func Execute(selector: Selector, of target: Any) {
 
 public struct EasyGCD {
 
-    public typealias VoidClosure = (Swift.Void) -> (Swift.Void)
+    public typealias VoidClosure = () -> (Swift.Void)
     public typealias ApplyClosure = (Swift.Int) -> (Swift.Void)
     
     fileprivate let currentItem: DispatchWorkItem

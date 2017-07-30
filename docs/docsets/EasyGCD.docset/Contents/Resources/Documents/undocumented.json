@@ -226,34 +226,6 @@
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": null,
-      "symbol": "EasyGCD",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": null,
-      "symbol": "EasyGCD",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": null,
-      "symbol": "EasyGCD",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": null,
-      "symbol": "EasyGCD",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
       "line": 42,
       "symbol": "EasyGCD",
       "symbol_kind": "source.lang.swift.decl.struct",
@@ -282,392 +254,203 @@
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 56,
+      "line": 57,
       "symbol": "EasyGCD.Queue",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 56,
+      "line": 57,
       "symbol": "EasyGCD.Queue",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 56,
+      "line": 57,
       "symbol": "EasyGCD.Queue",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 56,
+      "line": 57,
       "symbol": "EasyGCD.Queue",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 58,
+      "line": 59,
       "symbol": "EasyGCD.Queue.Atribute",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 58,
+      "line": 59,
       "symbol": "EasyGCD.Queue.Atribute",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 58,
+      "line": 59,
       "symbol": "EasyGCD.Queue.Atribute",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 58,
+      "line": 59,
       "symbol": "EasyGCD.Queue.Atribute",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 63,
-      "symbol": "EasyGCD.Queue.main",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 63,
-      "symbol": "EasyGCD.Queue.main",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 63,
-      "symbol": "EasyGCD.Queue.main",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 63,
-      "symbol": "EasyGCD.Queue.main",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 67,
-      "symbol": "EasyGCD.Queue.global",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 67,
-      "symbol": "EasyGCD.Queue.global",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 67,
-      "symbol": "EasyGCD.Queue.global",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 67,
-      "symbol": "EasyGCD.Queue.global",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 71,
-      "symbol": "EasyGCD.Queue.custom",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 71,
-      "symbol": "EasyGCD.Queue.custom",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 71,
-      "symbol": "EasyGCD.Queue.custom",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 71,
-      "symbol": "EasyGCD.Queue.custom",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 81,
-      "symbol": "EasyGCD.mainQueue",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 81,
-      "symbol": "EasyGCD.mainQueue",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 81,
-      "symbol": "EasyGCD.mainQueue",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 81,
-      "symbol": "EasyGCD.mainQueue",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 85,
-      "symbol": "EasyGCD.globalQueue",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 85,
-      "symbol": "EasyGCD.globalQueue",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 85,
-      "symbol": "EasyGCD.globalQueue",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 85,
-      "symbol": "EasyGCD.globalQueue",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 89,
-      "symbol": "EasyGCD.customQueue",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 89,
-      "symbol": "EasyGCD.customQueue",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 89,
-      "symbol": "EasyGCD.customQueue",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 89,
-      "symbol": "EasyGCD.customQueue",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 98,
+      "line": 105,
       "symbol": "EasyGCD.Group",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 98,
+      "line": 105,
       "symbol": "EasyGCD.Group",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 98,
+      "line": 105,
       "symbol": "EasyGCD.Group",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 98,
+      "line": 105,
       "symbol": "EasyGCD.Group",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 99,
+      "line": 106,
       "symbol": "EasyGCD.Group.group",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 99,
+      "line": 106,
       "symbol": "EasyGCD.Group.group",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 99,
+      "line": 106,
       "symbol": "EasyGCD.Group.group",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 99,
+      "line": 106,
       "symbol": "EasyGCD.Group.group",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 102,
+      "line": 109,
       "symbol": "EasyGCD.Group.enter()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 102,
+      "line": 109,
       "symbol": "EasyGCD.Group.enter()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 102,
+      "line": 109,
       "symbol": "EasyGCD.Group.enter()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 102,
+      "line": 109,
       "symbol": "EasyGCD.Group.enter()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 106,
+      "line": 113,
       "symbol": "EasyGCD.Group.leave()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 106,
+      "line": 113,
       "symbol": "EasyGCD.Group.leave()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 106,
+      "line": 113,
       "symbol": "EasyGCD.Group.leave()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 106,
+      "line": 113,
       "symbol": "EasyGCD.Group.leave()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 110,
+      "line": 117,
       "symbol": "EasyGCD.Group.enterOnce()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 110,
+      "line": 117,
       "symbol": "EasyGCD.Group.enterOnce()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 110,
+      "line": 117,
       "symbol": "EasyGCD.Group.enterOnce()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 110,
+      "line": 117,
       "symbol": "EasyGCD.Group.enterOnce()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 116,
-      "symbol": "EasyGCD.Group.leaveOnce()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 116,
-      "symbol": "EasyGCD.Group.leaveOnce()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 116,
-      "symbol": "EasyGCD.Group.leaveOnce()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 116,
+      "line": 123,
       "symbol": "EasyGCD.Group.leaveOnce()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -675,27 +458,34 @@
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
       "line": 123,
-      "symbol": "EasyGCD.Group.async(_:closure:)",
+      "symbol": "EasyGCD.Group.leaveOnce()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
       "line": 123,
-      "symbol": "EasyGCD.Group.async(_:closure:)",
+      "symbol": "EasyGCD.Group.leaveOnce()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
       "line": 123,
+      "symbol": "EasyGCD.Group.leaveOnce()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
+      "line": 130,
       "symbol": "EasyGCD.Group.async(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 123,
+      "line": 130,
       "symbol": "EasyGCD.Group.async(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -703,27 +493,20 @@
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
       "line": 130,
-      "symbol": "EasyGCD.Group.notify(_:closure:)",
+      "symbol": "EasyGCD.Group.async(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
       "line": 130,
-      "symbol": "EasyGCD.Group.notify(_:closure:)",
+      "symbol": "EasyGCD.Group.async(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 130,
-      "symbol": "EasyGCD.Group.notify(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 130,
+      "line": 137,
       "symbol": "EasyGCD.Group.notify(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -731,811 +514,440 @@
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
       "line": 137,
-      "symbol": "EasyGCD.Group.wait(_:)",
+      "symbol": "EasyGCD.Group.notify(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
       "line": 137,
-      "symbol": "EasyGCD.Group.wait(_:)",
+      "symbol": "EasyGCD.Group.notify(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
       "line": 137,
+      "symbol": "EasyGCD.Group.notify(_:closure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
+      "line": 144,
       "symbol": "EasyGCD.Group.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 137,
+      "line": 144,
       "symbol": "EasyGCD.Group.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 142,
+      "line": 144,
       "symbol": "EasyGCD.Group.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 142,
+      "line": 144,
       "symbol": "EasyGCD.Group.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 142,
+      "line": 149,
       "symbol": "EasyGCD.Group.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 142,
+      "line": 149,
       "symbol": "EasyGCD.Group.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 153,
+      "line": 149,
+      "symbol": "EasyGCD.Group.wait(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
+      "line": 149,
+      "symbol": "EasyGCD.Group.wait(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
+      "line": 160,
       "symbol": "EasyGCD.Semaphore",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 153,
+      "line": 160,
       "symbol": "EasyGCD.Semaphore",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 153,
+      "line": 160,
       "symbol": "EasyGCD.Semaphore",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 153,
+      "line": 160,
       "symbol": "EasyGCD.Semaphore",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 163,
+      "line": 170,
       "symbol": "EasyGCD.Semaphore.signal()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 163,
+      "line": 170,
       "symbol": "EasyGCD.Semaphore.signal()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 163,
+      "line": 170,
       "symbol": "EasyGCD.Semaphore.signal()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 163,
+      "line": 170,
       "symbol": "EasyGCD.Semaphore.signal()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 168,
+      "line": 175,
       "symbol": "EasyGCD.Semaphore.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 168,
+      "line": 175,
       "symbol": "EasyGCD.Semaphore.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 168,
+      "line": 175,
       "symbol": "EasyGCD.Semaphore.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 168,
+      "line": 175,
       "symbol": "EasyGCD.Semaphore.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 173,
+      "line": 180,
       "symbol": "EasyGCD.Semaphore.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 173,
+      "line": 180,
       "symbol": "EasyGCD.Semaphore.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 173,
+      "line": 180,
       "symbol": "EasyGCD.Semaphore.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 173,
+      "line": 180,
       "symbol": "EasyGCD.Semaphore.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 185,
-      "symbol": "EasyGCD.async(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 185,
-      "symbol": "EasyGCD.async(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 185,
-      "symbol": "EasyGCD.async(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 185,
-      "symbol": "EasyGCD.async(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 192,
-      "symbol": "EasyGCD.async(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 192,
-      "symbol": "EasyGCD.async(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 192,
-      "symbol": "EasyGCD.async(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 192,
-      "symbol": "EasyGCD.async(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 201,
-      "symbol": "EasyGCD.sync(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 201,
-      "symbol": "EasyGCD.sync(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 201,
-      "symbol": "EasyGCD.sync(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 201,
-      "symbol": "EasyGCD.sync(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 208,
-      "symbol": "EasyGCD.sync(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 208,
-      "symbol": "EasyGCD.sync(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 208,
-      "symbol": "EasyGCD.sync(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 208,
-      "symbol": "EasyGCD.sync(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 217,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 217,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 217,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 217,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 224,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 224,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 224,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 224,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 234,
-      "symbol": "EasyGCD.async(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 234,
-      "symbol": "EasyGCD.async(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 234,
-      "symbol": "EasyGCD.async(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 234,
-      "symbol": "EasyGCD.async(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 239,
-      "symbol": "EasyGCD.async(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 239,
-      "symbol": "EasyGCD.async(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 239,
-      "symbol": "EasyGCD.async(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 239,
-      "symbol": "EasyGCD.async(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 249,
-      "symbol": "EasyGCD.sync(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 249,
-      "symbol": "EasyGCD.sync(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 249,
-      "symbol": "EasyGCD.sync(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 249,
-      "symbol": "EasyGCD.sync(_:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 257,
-      "symbol": "EasyGCD.sync(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 257,
-      "symbol": "EasyGCD.sync(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 257,
-      "symbol": "EasyGCD.sync(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 257,
-      "symbol": "EasyGCD.sync(_:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 267,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 267,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 267,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 267,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 272,
-      "symbol": "EasyGCD.after(_:queue:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 272,
-      "symbol": "EasyGCD.after(_:queue:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 272,
-      "symbol": "EasyGCD.after(_:queue:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 272,
-      "symbol": "EasyGCD.after(_:queue:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 282,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 282,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 282,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 282,
-      "symbol": "EasyGCD.after(_:queue:closure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 287,
-      "symbol": "EasyGCD.after(_:queue:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 287,
-      "symbol": "EasyGCD.after(_:queue:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 287,
-      "symbol": "EasyGCD.after(_:queue:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 287,
-      "symbol": "EasyGCD.after(_:queue:target:selector:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 326,
+      "line": 465,
       "symbol": "EasyGCD.barrierAsync(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 326,
+      "line": 465,
       "symbol": "EasyGCD.barrierAsync(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 326,
+      "line": 465,
       "symbol": "EasyGCD.barrierAsync(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 326,
+      "line": 465,
       "symbol": "EasyGCD.barrierAsync(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 330,
+      "line": 469,
       "symbol": "EasyGCD.barrierSync(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 330,
+      "line": 469,
       "symbol": "EasyGCD.barrierSync(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 330,
+      "line": 469,
       "symbol": "EasyGCD.barrierSync(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 330,
+      "line": 469,
       "symbol": "EasyGCD.barrierSync(_:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 334,
+      "line": 473,
       "symbol": "EasyGCD.apply(_:queue:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 334,
+      "line": 473,
       "symbol": "EasyGCD.apply(_:queue:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 334,
+      "line": 473,
       "symbol": "EasyGCD.apply(_:queue:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 334,
+      "line": 473,
       "symbol": "EasyGCD.apply(_:queue:closure:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 340,
+      "line": 479,
       "symbol": "EasyGCD.time(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 340,
+      "line": 479,
       "symbol": "EasyGCD.time(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 340,
+      "line": 479,
       "symbol": "EasyGCD.time(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 340,
+      "line": 479,
       "symbol": "EasyGCD.time(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 344,
+      "line": 483,
       "symbol": "EasyGCD.group",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 344,
+      "line": 483,
       "symbol": "EasyGCD.group",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 344,
+      "line": 483,
       "symbol": "EasyGCD.group",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 344,
+      "line": 483,
       "symbol": "EasyGCD.group",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 348,
+      "line": 487,
       "symbol": "EasyGCD.semaphore(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 348,
+      "line": 487,
       "symbol": "EasyGCD.semaphore(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 348,
+      "line": 487,
       "symbol": "EasyGCD.semaphore(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 348,
+      "line": 487,
       "symbol": "EasyGCD.semaphore(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 396,
+      "line": 535,
       "symbol": "EasyGCD.cancel()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 396,
+      "line": 535,
       "symbol": "EasyGCD.cancel()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 396,
+      "line": 535,
       "symbol": "EasyGCD.cancel()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 396,
+      "line": 535,
       "symbol": "EasyGCD.cancel()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 401,
+      "line": 540,
       "symbol": "EasyGCD.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 401,
+      "line": 540,
       "symbol": "EasyGCD.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 401,
+      "line": 540,
       "symbol": "EasyGCD.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 401,
+      "line": 540,
       "symbol": "EasyGCD.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 406,
+      "line": 545,
       "symbol": "EasyGCD.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 406,
+      "line": 545,
       "symbol": "EasyGCD.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 406,
+      "line": 545,
       "symbol": "EasyGCD.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Projects/Github/EasyGCD/EasyGCD/EasyGCD.swift",
-      "line": 406,
+      "line": 545,
       "symbol": "EasyGCD.wait(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
