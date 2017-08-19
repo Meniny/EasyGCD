@@ -32,6 +32,11 @@ class ViewController: UIViewController {
     }
     
     func async() {
+        
+        main {
+            print("async @ main queue")
+        }
+        
         EasyGCD.async(EasyGCDQueue.global(.background)) {
             print("async @ background global queue")
         }

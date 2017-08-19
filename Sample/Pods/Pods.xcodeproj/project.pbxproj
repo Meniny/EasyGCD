@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4DF5A47AA95D103A253621197257AFCF /* EasyGCD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D0D487A5FBE24EA62636926240CDF6 /* EasyGCD-dummy.m */; };
+		5CD937131F4851E70081BAB8 /* EasyGCDTypealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD937121F4851E70081BAB8 /* EasyGCDTypealias.swift */; };
+		5CD937151F4852090081BAB8 /* EasyGCDGlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD937141F4852090081BAB8 /* EasyGCDGlobalFunctions.swift */; };
 		87CD43E689ED29B70E383CBA8D9490E8 /* Pods-Sample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 630DD76D417453483F37DBAE838D5518 /* Pods-Sample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A54BE6DBAFB1EF8EAA2F93F011529489 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		B112BA2007CC08D45F94CF645E5CD9EE /* EasyGCD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E350DBB10BB744A733F7DCD8898B9725 /* EasyGCD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,26 +31,28 @@
 
 /* Begin PBXFileReference section */
 		161FD1626938094EEC6BF57530EDB6DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F14D05D3C7A13BB15D8B30AC171BF2E /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Sample.framework; path = "Pods-Sample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F14D05D3C7A13BB15D8B30AC171BF2E /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDF78216A41DB691C5960FEE69EB9FD /* Pods-Sample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample-resources.sh"; sourceTree = "<group>"; };
 		3AE375A74D27FC41E7BB6C006DFC76A6 /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		3B51E3DCEE4DD8F82EFF925BBB5AD541 /* EasyGCD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EasyGCD.swift; sourceTree = "<group>"; };
 		4AF50723EE695E440CDA214119EF2C70 /* Pods-Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sample-dummy.m"; sourceTree = "<group>"; };
+		5CD937121F4851E70081BAB8 /* EasyGCDTypealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyGCDTypealias.swift; sourceTree = "<group>"; };
+		5CD937141F4852090081BAB8 /* EasyGCDGlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyGCDGlobalFunctions.swift; sourceTree = "<group>"; };
 		630DD76D417453483F37DBAE838D5518 /* Pods-Sample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sample-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		69DAD8052D5A129996C029F082989A4A /* EasyGCD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EasyGCD.h; sourceTree = "<group>"; };
 		6D65DC53E876D33B73CCFEE44C379EE1 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
-		735E5204C40E887244F2B75BCCDF2572 /* Pods-Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Sample.modulemap"; sourceTree = "<group>"; };
+		735E5204C40E887244F2B75BCCDF2572 /* Pods-Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Sample.modulemap"; sourceTree = "<group>"; };
 		8A959B48607FA5B4B98B8CA931EF3FB9 /* EasyGCD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyGCD-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9C896AB03AD02637A2108FF27D207683 /* Pods-Sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample-frameworks.sh"; sourceTree = "<group>"; };
 		A21D9B3C2775E7C503E601A5737980FB /* Pods-Sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A4F67C9E66E8D9E97F11042B162517EB /* Pods-Sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sample-acknowledgements.plist"; sourceTree = "<group>"; };
 		B753169C746EE28B55C8D5AB3D8B96A8 /* EasyGCD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyGCD.xcconfig; sourceTree = "<group>"; };
 		CC50AEB7C0A79037B5A2AFD6F81DF5C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E350DBB10BB744A733F7DCD8898B9725 /* EasyGCD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyGCD-umbrella.h"; sourceTree = "<group>"; };
-		F00472840AD4EB941E36A51365D3BF18 /* EasyGCD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyGCD.framework; path = EasyGCD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F020DAEC9D26D2EA85222E68EBC1C420 /* EasyGCD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EasyGCD.modulemap; sourceTree = "<group>"; };
+		F00472840AD4EB941E36A51365D3BF18 /* EasyGCD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyGCD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F020DAEC9D26D2EA85222E68EBC1C420 /* EasyGCD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EasyGCD.modulemap; sourceTree = "<group>"; };
 		F7D0D487A5FBE24EA62636926240CDF6 /* EasyGCD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyGCD-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,8 +133,9 @@
 			children = (
 				69DAD8052D5A129996C029F082989A4A /* EasyGCD.h */,
 				3B51E3DCEE4DD8F82EFF925BBB5AD541 /* EasyGCD.swift */,
+				5CD937121F4851E70081BAB8 /* EasyGCDTypealias.swift */,
+				5CD937141F4852090081BAB8 /* EasyGCDGlobalFunctions.swift */,
 			);
-			name = EasyGCD;
 			path = EasyGCD;
 			sourceTree = "<group>";
 		};
@@ -275,7 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DF5A47AA95D103A253621197257AFCF /* EasyGCD-dummy.m in Sources */,
+				5CD937151F4852090081BAB8 /* EasyGCDGlobalFunctions.swift in Sources */,
 				B27F139D228E7EA1EC3FD71C17545C34 /* EasyGCD.swift in Sources */,
+				5CD937131F4851E70081BAB8 /* EasyGCDTypealias.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
