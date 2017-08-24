@@ -22,10 +22,10 @@ public var asynchronously: Bool {
 /// Execute the closure on a specific dispatch queue
 ///
 /// - Parameters:
-///   - queue: A specific dispatch queue, default is main queue
+///   - queue: A specific dispatch queue
 ///   - policy: The dispatch policy, default is asynchronously
 ///   - closure: A closure without parameters
-public func dispatch(_ queue: DispatchQueue = .main, _ policy: EasyGCDDispatch = .asynchronously, _ closure: @escaping EasyGCDVoidClosure) {
+public func dispatch(_ queue: DispatchQueue, _ policy: EasyGCDDispatch = .asynchronously, _ closure: @escaping EasyGCDVoidClosure) {
     EasyGCD.exectue(policy, on: queue, closure: closure)
 }
 
@@ -51,10 +51,8 @@ public func global(_ policy: EasyGCDDispatch = .asynchronously, _ closure: @esca
 ///
 /// - Parameters:
 ///   - time: A time interval
-///   - queue: A specific dispatch queue, default is main queue
-///   - policy: The dispatch policy, default is asynchronously
 ///   - closure: A closure without parameters
-public func after(_ time: TimeInterval, _ queue: DispatchQueue = .main, _ policy: EasyGCDDispatch = .asynchronously, _ closure: @escaping EasyGCDVoidClosure) {
+public func after(_ time: TimeInterval, _ closure: @escaping EasyGCDVoidClosure) {
     EasyGCD.after(time, closure: closure)
 }
 
@@ -62,10 +60,8 @@ public func after(_ time: TimeInterval, _ queue: DispatchQueue = .main, _ policy
 ///
 /// - Parameters:
 ///   - token: A once token string
-///   - queue: A specific dispatch queue, default is main queue
-///   - policy: The dispatch policy, default is asynchronously
 ///   - closure: A closure without parameters
-public func once(_ token: String, _ queue: DispatchQueue = .main, _ policy: EasyGCDDispatch = .asynchronously, _ closure: @escaping EasyGCDVoidClosure) {
+public func once(_ token: String, _ closure: @escaping EasyGCDVoidClosure) {
     EasyGCD.once(token: token, closure: closure)
 }
 

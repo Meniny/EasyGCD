@@ -78,6 +78,7 @@ class ViewController: UIViewController {
         once("Once1") { 
             print("Once1")
         }
+        
         EasyGCD.once(token: "Once2") {
             print("Once2")
         }
