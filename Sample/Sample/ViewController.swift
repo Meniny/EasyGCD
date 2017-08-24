@@ -15,37 +15,54 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        sync()
+        syncActions()
         
-        async()
+        asyncActions()
         
-        after()
+        afterActions()
         
-        once()
-        once()
+        onceActions()
+        onceActions()
     }
     
-    func sync() {
+    func syncActions() {
+        sync {
+            print("sync @ default global queue 1")
+        }
+        
+        global(.synchronously) {
+            print("sync @ default global queue 2")
+        }
+        
         EasyGCD.sync(.global(qos: .background)) {
             print("sync @ background global queue")
         }
     }
     
-    func async() {
+    func asyncActions() {
+        
+        async {
+            print("async @ main queue 1")
+        }
         
         main {
-            print("async @ main queue")
+            print("async @ main queue 2")
         }
         
         EasyGCD.async(EasyGCDQueue.global(.background)) {
             print("async @ background global queue")
         }
+        
         EasyGCD.async {
-            print("async @ main queue")
+            print("async @ main queue 3")
         }
     }
     
-    func after() {
+    func afterActions() {
+        after(1.0) {
+            print("1 seconds later")
+        }
+        
         EasyGCD.after(2.0) {
             print("2 seconds later")
         }
@@ -57,9 +74,12 @@ class ViewController: UIViewController {
         }
     }
     
-    func once() {
-        EasyGCD.once(token: "Once") {
-            print("Once")
+    func onceActions() {
+        once("Once1") { 
+            print("Once1")
+        }
+        EasyGCD.once(token: "Once2") {
+            print("Once2")
         }
     }
 

@@ -26,8 +26,8 @@ import Foundation
 import Dispatch
 
 // MARK: - EasyGCD Main structure
-public typealias EasyGCDVoidClosure = () -> (Swift.Void)
-public typealias EasyGCDApplyClosure = (Swift.Int) -> (Swift.Void)
+public typealias EasyGCDVoidClosure = () -> Swift.Void
+public typealias EasyGCDApplyClosure = (Swift.Int) -> Swift.Void
 
 public enum EasyGCDDispatch {
     case synchronously
