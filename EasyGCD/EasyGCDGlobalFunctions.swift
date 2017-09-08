@@ -61,8 +61,10 @@ public func after(_ time: TimeInterval, _ closure: @escaping EasyGCDVoidClosure)
 /// - Parameters:
 ///   - token: A once token string
 ///   - closure: A closure without parameters
-public func once(_ token: String, _ closure: @escaping EasyGCDVoidClosure) {
-    EasyGCD.once(token: token, closure: closure)
+/// - Returns: If `closure` will be executed
+@discardableResult
+public func once(_ token: String, _ closure: @escaping EasyGCDVoidClosure) -> Bool {
+    return EasyGCD.once(token: token, closure: closure)
 }
 
 /// Execute the closure on a specific dispatch queue synchronously

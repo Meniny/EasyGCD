@@ -534,17 +534,22 @@ public extension EasyGCD {
      
      - parameter token: A unique reverse DNS style name such as com.vectorform.<name> or a GUID
      - parameter closure: Closure to EasyGCD.execute once
+     - Returns: If `closure` will be executed
      */
-    public static func once(token: String, closure: EasyGCDVoidClosure) {
+    @discardableResult
+    public static func once(token: String, closure: EasyGCDVoidClosure) -> Bool {
         objc_sync_enter(self)
         defer {
             objc_sync_exit(self)
         }
         
-        if EasyGCD.onceTracker.contains(token) { return }
+        if EasyGCD.onceTracker.contains(token) {
+            return false
+        }
         
         EasyGCD.onceTracker.append(token)
         closure()
+        return true
     }
     
     /**
@@ -556,7 +561,7 @@ public extension EasyGCD {
      - parameter selector: `Selector`
      */
     public static func once(token: String, target: Any, selector: Selector) {
-        once(token: token) {
+        EasyGCD.once(token: token) { 
             EasyGCD.execute(selector: selector, of: target)
         }
     }
