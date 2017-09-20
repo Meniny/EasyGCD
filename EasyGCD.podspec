@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "EasyGCD"
-  s.version          = "1.2.1"
+  s.version          = "1.3.0"
   s.summary          = "A tiny library to make using GCD easier."
   s.homepage         = "https://github.com/Meniny/EasyGCD"
   s.license          = 'MIT'
