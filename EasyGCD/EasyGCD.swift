@@ -48,15 +48,15 @@ public struct EasyGCD {
 }
 
 public extension EasyGCD {
-    public static func timeoutCalculate(_ time: TimeInterval) -> Int64 {
+    static func timeoutCalculate(_ time: TimeInterval) -> Int64 {
         return Int64(time * Double(NSEC_PER_SEC))
     }
     
-    public static func dispatchTimeCalculate(_ time: TimeInterval) -> DispatchTime {
+    static func dispatchTimeCalculate(_ time: TimeInterval) -> DispatchTime {
         return DispatchTime.now() + Double(EasyGCD.timeoutCalculate(time)) / Double(NSEC_PER_SEC)
     }
     
-    public static func execute(selector: Selector, of target: Any) {
+    static func execute(selector: Selector, of target: Any) {
         Timer.scheduledTimer(timeInterval: 0, target: target, selector: selector, userInfo: nil, repeats: false)
     }
 }
@@ -64,7 +64,7 @@ public extension EasyGCD {
 // MARK: - EasyGCD.Queue
 public extension EasyGCD {
     
-    public enum Queue {
+    enum Queue {
         
         public enum Atribute {
             static var concurrent: DispatchQueue.Attributes = DispatchQueue.Attributes.concurrent
@@ -93,17 +93,17 @@ public extension EasyGCD {
 public extension EasyGCD {
     
     /// Main Dispatch Queue
-    public static var mainQueue: DispatchQueue {
-        return EasyGCD.mainQueue
+    static var mainQueue: DispatchQueue {
+        return EasyGCD.Queue.main
     }
     
     /// Global Dispatch Queue with Specific Priority
-    public static var globalQueue: (_ priority: DispatchQoS.QoSClass) -> DispatchQueue = { (priority) in
+    static var globalQueue: (_ priority: DispatchQoS.QoSClass) -> DispatchQueue = { (priority) in
         return EasyGCD.Queue.global(priority)
     }
     
     /// Custom Dispatch Queue with Specific Identifier and Attributes
-    public static var customQueue: (_ identifier: String, _ attributes: DispatchQueue.Attributes) -> DispatchQueue = { (identifier, attributes) in
+    static var customQueue: (_ identifier: String, _ attributes: DispatchQueue.Attributes) -> DispatchQueue = { (identifier, attributes) in
         return EasyGCD.Queue.custom(identifier, attributes)
     }
 }
@@ -111,8 +111,7 @@ public extension EasyGCD {
 // MARK: - EasyGCD.Group
 public extension EasyGCD {
     
-    
-    public struct Group {
+    struct Group {
         public let group: DispatchGroup = DispatchGroup()
         private var onceToken: Int32 = 0
         
@@ -167,7 +166,7 @@ public extension EasyGCD {
 // MARK: - EasyGCD.Semaphore
 public extension EasyGCD {
     
-    public struct Semaphore {
+    struct Semaphore {
         private let value: Int
         let semaphore: DispatchSemaphore
         
@@ -207,7 +206,7 @@ public extension EasyGCD {
     ///   - closure: Code closure
     /// - Returns: `EasyGCD` object
     @discardableResult
-    public static func exectue(_ dispatch: EasyGCDDispatch = .asynchronously, on queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
+     static func exectue(_ dispatch: EasyGCDDispatch = .asynchronously, on queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
         let gcd = EasyGCD(closure: closure)
         if dispatch == .asynchronously {
             queue.async(execute: gcd.currentItem)
@@ -228,7 +227,7 @@ public extension EasyGCD {
     ///   - closure: Code closure
     /// - Returns: `EasyGCD` object
     @discardableResult
-    public static func async(_ queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
+    static func async(_ queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
         let dispatch = EasyGCD(closure: closure)
         queue.async(execute: dispatch.currentItem)
         return dispatch
@@ -242,7 +241,7 @@ public extension EasyGCD {
     ///   - selector: A `Selector` object
     /// - Returns: `EasyGCD` object
     @discardableResult
-    public static func async(_ queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
+    static func async(_ queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
         let dispatch = EasyGCD {
             EasyGCD.execute(selector: selector, of: target)
         }
@@ -257,7 +256,7 @@ public extension EasyGCD {
     ///   - closure: Code closure
     /// - Returns: `EasyGCD` object
     @discardableResult
-    public static func sync(_ queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
+    static func sync(_ queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
         let dispatch = EasyGCD(closure: closure)
         queue.sync(execute: dispatch.currentItem)
         return dispatch
@@ -271,7 +270,7 @@ public extension EasyGCD {
     ///   - selector: A `Selector` object
     /// - Returns: `EasyGCD` object
     @discardableResult
-    public static func sync(_ queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
+    static func sync(_ queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
         let dispatch = EasyGCD {
             EasyGCD.execute(selector: selector, of: target)
         }
@@ -287,7 +286,7 @@ public extension EasyGCD {
     ///   - closure: Code closure
     /// - Returns: `EasyGCD` object
     @discardableResult
-    public static func after(_ dispatchTime: DispatchTime, queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
+    static func after(_ dispatchTime: DispatchTime, queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
         let dispatch = EasyGCD(closure: closure)
         queue.asyncAfter(deadline: dispatchTime, execute: dispatch.currentItem)
         return dispatch
@@ -302,7 +301,7 @@ public extension EasyGCD {
     ///   - selector: A `Selector` object
     /// - Returns: `EasyGCD` object
     @discardableResult
-    public static func after(_ dispatchTime: DispatchTime, queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
+    static func after(_ dispatchTime: DispatchTime, queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
         let asyncWrapper: EasyGCDVoidClosure = {
             queue.async(execute: {
                 EasyGCD.execute(selector: selector, of: target)
@@ -319,7 +318,7 @@ public extension EasyGCD {
     ///   - closure: Code closure
     /// - Returns: `EasyGCD` object
     @discardableResult
-    public static func after(_ time: TimeInterval, queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
+    static func after(_ time: TimeInterval, queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
         return after(EasyGCD.dispatchTimeCalculate(time), queue: queue, closure: closure)
     }
     
@@ -332,7 +331,7 @@ public extension EasyGCD {
     ///   - selector: A `Selector` object
     /// - Returns: `EasyGCD` object
     @discardableResult
-    public static func after(_ time: TimeInterval, queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
+    static func after(_ time: TimeInterval, queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
         let asyncWrapper: EasyGCDVoidClosure = {
             queue.async(execute: {
                 EasyGCD.execute(selector: selector, of: target)
@@ -353,7 +352,7 @@ internal extension EasyGCD {
     ///   - closure: Code closure
     /// - Returns: `EasyGCD` object
     @discardableResult
-    internal func async(_ queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
+    func async(_ queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
         return chain(time: nil, queue: queue, closure: closure)
     }
     
@@ -365,7 +364,7 @@ internal extension EasyGCD {
     ///   - selector: A `Selector` object
     /// - Returns: `EasyGCD` object
     @discardableResult
-    internal func async(_ queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
+    func async(_ queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
         let asyncWrapper: EasyGCDVoidClosure = {
             queue.async(execute: {
                 EasyGCD.execute(selector: selector, of: target)
@@ -381,7 +380,7 @@ internal extension EasyGCD {
     ///   - closure: Code closure
     /// - Returns: `EasyGCD` object
     @discardableResult
-    internal func sync(_ queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
+    func sync(_ queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
         let syncWrapper: EasyGCDVoidClosure = {
             queue.sync(execute: closure)
         }
@@ -396,7 +395,7 @@ internal extension EasyGCD {
     ///   - selector: A `Selector` object
     /// - Returns: `EasyGCD` object
     @discardableResult
-    internal func sync(_ queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
+    func sync(_ queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
         let syncWrapper: EasyGCDVoidClosure = {
             queue.sync(execute: { 
                 EasyGCD.execute(selector: selector, of: target)
@@ -413,7 +412,7 @@ internal extension EasyGCD {
     ///   - closure: Code closure
     /// - Returns: `EasyGCD` object
     @discardableResult
-    internal func after(_ dispatchTime: DispatchTime, queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
+    func after(_ dispatchTime: DispatchTime, queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
         return chain(dispatchTime: dispatchTime, queue: queue, closure: closure)
     }
     
@@ -426,7 +425,7 @@ internal extension EasyGCD {
     ///   - selector: A `Selector` object
     /// - Returns: `EasyGCD` object
     @discardableResult
-    internal func after(_ dispatchTime: DispatchTime, queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
+    func after(_ dispatchTime: DispatchTime, queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
         let asyncWrapper: EasyGCDVoidClosure = {
             queue.async(execute: {
                 EasyGCD.execute(selector: selector, of: target)
@@ -443,7 +442,7 @@ internal extension EasyGCD {
     ///   - closure: Code closure
     /// - Returns: `EasyGCD` object
     @discardableResult
-    internal func after(_ time: TimeInterval, queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
+    func after(_ time: TimeInterval, queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
         return chain(time: time, queue: queue, closure: closure)
     }
     
@@ -456,7 +455,7 @@ internal extension EasyGCD {
     ///   - selector: A `Selector` object
     /// - Returns: `EasyGCD` object
     @discardableResult
-    internal func after(_ time: TimeInterval, queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
+    func after(_ time: TimeInterval, queue: DispatchQueue = .main, target: Any, selector: Selector) -> EasyGCD {
         let asyncWrapper: EasyGCDVoidClosure = {
             queue.async(execute: {
                 EasyGCD.execute(selector: selector, of: target)
@@ -469,7 +468,7 @@ internal extension EasyGCD {
 // MARK: - Private chaining helper method
 fileprivate extension EasyGCD {
     
-    fileprivate func chain(dispatchTime: DispatchTime?, queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
+    func chain(dispatchTime: DispatchTime?, queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
         let newDispatch = EasyGCD(closure: closure)
         let nextItem: DispatchWorkItem
         if let time = dispatchTime {
@@ -483,7 +482,7 @@ fileprivate extension EasyGCD {
         return newDispatch
     }
     
-    fileprivate func chain(time: TimeInterval?, queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
+    func chain(time: TimeInterval?, queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) -> EasyGCD {
         if let time = time {
             return chain(dispatchTime: EasyGCD.dispatchTimeCalculate(time), queue: queue, closure: closure)
         }
@@ -495,29 +494,29 @@ fileprivate extension EasyGCD {
 // MARK: - Non-Chainable Methods
 public extension EasyGCD {
     
-    public static func barrierAsync(_ queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) {
+    static func barrierAsync(_ queue: DispatchQueue = .main, closure: @escaping EasyGCDVoidClosure) {
         queue.async(flags: .barrier, execute: closure)
     }
     
-    public static func barrierSync(_ queue: DispatchQueue = .main, closure: EasyGCDVoidClosure) {
+    static func barrierSync(_ queue: DispatchQueue = .main, closure: EasyGCDVoidClosure) {
         queue.sync(flags: .barrier, execute: closure)
     }
     
-    public static func apply(_ iterations: Int, queue: DispatchQueue = .main, closure: @escaping EasyGCDApplyClosure) {
+    static func apply(_ iterations: Int, queue: DispatchQueue = .main, closure: @escaping EasyGCDApplyClosure) {
         queue.async {
             DispatchQueue.concurrentPerform(iterations: iterations, execute: closure)
         }
     }
     
-    public static func time(_ timeout: TimeInterval) -> DispatchTime {
+    static func time(_ timeout: TimeInterval) -> DispatchTime {
         return EasyGCD.dispatchTimeCalculate(timeout)
     }
     
-    public static var group: EasyGCD.Group {
+    static var group: EasyGCD.Group {
         return EasyGCD.Group()
     }
     
-    public static func semaphore(_ value: Int = 0) -> EasyGCD.Semaphore {
+    static func semaphore(_ value: Int = 0) -> EasyGCD.Semaphore {
         return EasyGCD.Semaphore(value: value)
     }
     
@@ -537,7 +536,7 @@ public extension EasyGCD {
      - Returns: If `closure` will be executed
      */
     @discardableResult
-    public static func once(token: String, closure: EasyGCDVoidClosure) -> Bool {
+    static func once(token: String, closure: EasyGCDVoidClosure) -> Bool {
         objc_sync_enter(self)
         defer {
             objc_sync_exit(self)
@@ -560,7 +559,7 @@ public extension EasyGCD {
      - parameter target: Target
      - parameter selector: `Selector`
      */
-    public static func once(token: String, target: Any, selector: Selector) {
+    static func once(token: String, target: Any, selector: Selector) {
         EasyGCD.once(token: token) { 
             EasyGCD.execute(selector: selector, of: target)
         }
@@ -570,17 +569,17 @@ public extension EasyGCD {
 // MARK: - Block methods
 public extension EasyGCD {
     
-    public func cancel() {
+    func cancel() {
         currentItem.cancel()
     }
     
     @discardableResult
-    public func wait(_ timeout: DispatchTime = DispatchTime.distantFuture) -> DispatchTimeoutResult {
+    func wait(_ timeout: DispatchTime = DispatchTime.distantFuture) -> DispatchTimeoutResult {
         return currentItem.wait(timeout: timeout)
     }
     
     @discardableResult
-    public func wait(_ timeout: TimeInterval) -> DispatchTimeoutResult {
+    func wait(_ timeout: TimeInterval) -> DispatchTimeoutResult {
         return currentItem.wait(timeout: EasyGCD.dispatchTimeCalculate(timeout))
     }
 }

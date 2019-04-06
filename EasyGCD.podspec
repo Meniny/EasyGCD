@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "EasyGCD"
-  s.version          = "1.3.0"
+  s.version          = "1.4.0"
   s.summary          = "A tiny library to make using GCD easier."
   s.homepage         = "https://github.com/Meniny/EasyGCD"
   s.license          = 'MIT'
@@ -11,6 +11,9 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.10'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
+
+  s.pod_target_xcconfig   = { 'SWIFT_VERSION' => '5' }
+  s.swift_version         = "5"
 
   s.source_files = 'EasyGCD/*.*'
   s.module_name = 'EasyGCD'
